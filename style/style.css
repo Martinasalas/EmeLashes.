@@ -1,3 +1,8 @@
+.headerNav li a {
+  background-color: #1D211F;
+  color: #C6B8B0;
+}
+
 .contenedorCartas {
   padding-top: 30px;
   padding-left: 30px;

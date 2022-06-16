@@ -1,6 +1,14 @@
 @import 'colores';
 
+.headerNav{
+    li{
+        a{
+            background-color: map-get($colores, heavyMetal);
+            color: map-get($colores, silk);
 
+        }
+    }
+}
 
 .contenedorCartas{
     padding-top: 30px;
@@ -25,7 +33,6 @@
     }
     
 }
-
 
 .containerFooter{
     padding-top: 1rem;
