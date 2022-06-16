@@ -1,0 +1,42 @@
+@import 'colores';
+
+
+
+.contenedorCartas{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+
+    h1 {
+        text-align: center;
+        font-family: 'El Messiri', sans-serif;
+        color: map-get($colores, heavyMetal);
+    }
+    a{
+        &:hover{
+            transform: scale(1.07);
+        }
+
+
+
+
+
+    }
+    
+}
+
+
+.containerFooter{
+    padding-top: 1rem;
+    background-color: map-get($colores, heavyMetal);
+    color: map-get($colores, silk);
+    li{
+        a{
+            color: map-get($colores, silk);
+        }
+        &a:hover{
+            color: map-get($colores, gullGray);
+        }
+    }
+}

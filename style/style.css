@@ -1,0 +1,32 @@
+.contenedorCartas {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+
+.contenedorCartas h1 {
+  text-align: center;
+  font-family: 'El Messiri', sans-serif;
+  color: #1D211F;
+}
+
+.contenedorCartas a:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.containerFooter {
+  padding-top: 1rem;
+  background-color: #1D211F;
+  color: #C6B8B0;
+}
+
+.containerFooter li a {
+  color: #C6B8B0;
+}
+
+.containerFooter lia:hover {
+  color: #99B2B5;
+}
+/*# sourceMappingURL=style.css.map */
