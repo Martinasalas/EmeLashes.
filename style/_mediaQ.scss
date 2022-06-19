@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: auto;
+        ul {
+            display: block;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s;
+            a {
+                text-align: left;
+                width: 100%;
+                height: 50px;
+                background-color: map-get($colores, tea);
+                padding: 10px 0px 10px 5%;
+                color: map-get($colores, shark);
+            }
+        }
+    }
+    .menu-icon {
+        width: 100px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 60px;
+        i {
+            font-size: 1.7em; 
+        }
+    }
+    #menuToggle:checked ~ ul {
+        max-height: 350px;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns:  1fr;
+        overflow: hidden;
+    }
+    
+}
+
+
+
+
+

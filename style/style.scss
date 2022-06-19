@@ -1,49 +1,213 @@
+
 @import 'colores';
+@import 'keyframes';
 
-.headerNav{
-    li{
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: map-get($colores, shark);
+}
+.brand {
+    width: auto;
+    height: 100%;
+    float: left;
+    margin: 0 0 0 5%;
+    color: map-get($colores, tea);
+}
+.menu {
+    width: 60%;
+    height: 100%;
+    float: right;
+    ul{
+        width: 100%;
+        height: inherit;
+        margin: 0;
+        padding: 0;
+        display: flex;
         a{
-            background-color: map-get($colores, heavyMetal);
-            color: map-get($colores, silk);
-
+            width: 20%;
+            height: inherit;
+            color: map-get($colores, tea);
+            display: inline-block;
+            text-decoration: none;
         }
+        a:hover {
+            background-color: map-get($colores, taupe);
+            color: map-get($colores, tea);
+            text-decoration: none;
+        }
+
     }
 }
 
-.contenedorCartas{
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
 
-    h1 {
-        text-align: center;
-        font-family: 'El Messiri', sans-serif;
-        color: map-get($colores, heavyMetal);
+.container{
+    min-width: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+    .imgCard {
+        min-width: 100%;
+        min-height: 100%;
+        position: inherit;
     }
-    a{
-        &:hover{
-            transform: scale(1.07);
+
+    .fotoDiv1, .fotoDiv3{
+        background: url(/img/img-bg-1.jpg);
+        background-attachment: fixed;
+    }
+    .fotoDiv2{
+        background: url(/img/img-bg-4.jpg);
+        background-attachment: fixed;
+    }
+    .descripcionServici {
+        background-color: map-get($colores, goldd);
+        .textodesc {
+            margin: 30px;
+            padding: 30px;
+            border-style:solid;
+            border-color: map-get($colores, gullGray);
+            color: map-get($colores, gullGray);
+            animation-name: fadeIn;
+            animation-duration: 3s;
+            h2{
+                font-weight: 400;
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+            }
+
+        }
+        .buttom-Inic{
+            align-items: center;
+            border-radius: 5px;
+            background-color: map-get($colores, shark);
+            
+            &:hover{
+                background-color: map-get($colores,gullGray);
+            }
+            a {
+                text-decoration: none;
+                color: map-get($colores, gullGray);
+                &:hover{
+                    background-color: map-get($colores, gullGray);
+                    color: map-get($colores, shark);
+                }
+
+            }
         }
 
-
-
-
-
+        
+    }
+}
+.navServ{
+    height: 5vw;
+    background-color: map-get($colores, tea);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    a{
+        color: map-get($colores, taupe);
+        text-align: center;
+        justify-content: center;
+        text-transform: uppercase;
+        padding: 10px;
+        font-weight: 400;
+        &:hover {
+            color: map-get($colores, shark);
+        }
     }
     
 }
 
-.containerFooter{
-    padding-top: 1rem;
-    background-color: map-get($colores, heavyMetal);
-    color: map-get($colores, silk);
-    li{
-        a{
-            color: map-get($colores, silk);
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .bg-glly1 {
+        margin-top: 8px;
+        background-image: url(/img/img-bg7.jpg);
+        background-attachment: fixed;
+        img {
+            visibility: hidden;
         }
-        &a:hover{
-            color: map-get($colores, gullGray);
+        
+    }
+    .bg-glly2 {
+        margin-top: 8px;
+        background-image: url(/img/bg-img-2.jpg);
+        background-attachment: fixed;
+        img {
+            visibility: hidden;
         }
+        
     }
 }
+  
+  
+.footercontainer {
+    background-color: map-get($colores, shark);
+    h5{
+        color: map-get($colores, gullGray);
+        text-transform: uppercase
+    }
+    p{
+        color: map-get($colores, osloGray);
+    }
+
+    a{
+        color: map-get($colores, osloGray);
+        &:hover {
+            color: map-get($colores, goldd)
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+@import 'mediaQ';
