@@ -77,21 +77,21 @@ header {
     }
 
     .fotoDiv1, .fotoDiv3{
-        background: url(/img/img-bg-1.jpg);
+        background: url(/img/bg-img-6.jpg);
         background-attachment: fixed;
     }
     .fotoDiv2{
-        background: url(/img/img-bg-4.jpg);
+        background: url(/img/img-bg-5.jpg);
         background-attachment: fixed;
     }
     .descripcionServici {
-        background-color: map-get($colores, goldd);
+        background-color: map-get($colores, taupe);
         .textodesc {
             margin: 30px;
             padding: 30px;
             border-style:solid;
-            border-color: map-get($colores, gullGray);
-            color: map-get($colores, gullGray);
+            border-color: map-get($colores, tea);
+            color: map-get($colores, tea);
             animation-name: fadeIn;
             animation-duration: 3s;
             h2{
@@ -104,6 +104,7 @@ header {
 
         }
         .buttom-Inic{
+            justify-self: center;
             align-items: center;
             border-radius: 5px;
             background-color: map-get($colores, shark);
@@ -113,7 +114,7 @@ header {
             }
             a {
                 text-decoration: none;
-                color: map-get($colores, gullGray);
+                color: map-get($colores, tea);
                 &:hover{
                     background-color: map-get($colores, gullGray);
                     color: map-get($colores, shark);
@@ -163,7 +164,7 @@ header {
     }
     .bg-glly1 {
         margin-top: 8px;
-        background-image: url(/img/img-bg7.jpg);
+        background-image: url(/img/bg-img7.jpg);
         background-attachment: fixed;
         img {
             visibility: hidden;
@@ -172,7 +173,7 @@ header {
     }
     .bg-glly2 {
         margin-top: 8px;
-        background-image: url(/img/bg-img-2.jpg);
+        background-image: url(/img/bg-img-3.jpg);
         background-attachment: fixed;
         img {
             visibility: hidden;
