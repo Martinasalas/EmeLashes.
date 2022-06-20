@@ -181,6 +181,21 @@ header {
         
     }
 }
+
+.presentacion {
+    section{
+        background-color: map-get($colores, tea);
+        display: flex;
+        flex-direction: row;
+        margin: 5vh 10vw 5vh 10vw;
+    }
+}
+.encontranos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
   
   
 .footercontainer {
