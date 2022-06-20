@@ -215,7 +215,7 @@ header {
 
 .column .bg-glly1 {
   margin-top: 8px;
-  background-image: url(/img/bg-img7.jpg);
+  background-image: url(../img/bg-img7.jpg);
   background-attachment: fixed;
 }
 
@@ -225,7 +225,7 @@ header {
 
 .column .bg-glly2 {
   margin-top: 8px;
-  background-image: url(/img/bg-img-3.jpg);
+  background-image: url(../img/bg-img-3.jpg);
   background-attachment: fixed;
 }
 
