@@ -205,13 +205,6 @@ header {
 
 .serviciosd .pest-ext, .serviciosd .pest-ll {
   padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .serviciosd .cej-dp, .serviciosd .cej-dp-hn, .serviciosd .cej-bl {
@@ -277,10 +270,6 @@ header {
           animation-name: fadeIn;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-}
-
-.presentacion img {
-  position: relative;
 }
 
 .presentacion section {
@@ -365,6 +354,67 @@ header {
   text-align: justify;
 }
 
+.preciostb {
+  grid-area: preciostb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.preciostb div {
+  width: 350px;
+  height: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-right: #ffe8e2;
+  border-right-style: solid;
+  padding-right: 15px;
+}
+
+.preciotb__col {
+  list-style: none;
+}
+
+.preciotb__col li {
+  padding-bottom: 5px;
+  padding-left: 10px;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: #574C4E;
+  border-bottom-style: solid;
+}
+
+.preciotb__title {
+  font-size: 25px;
+  color: map;
+  list-style: none;
+  border-bottom-style: none;
+}
+
+.preciotb__tiposerv {
+  font-size: 20px;
+}
+
+.preciotb__precioserv {
+  font-size: 20px;
+  text-align: end;
+  color: #ba4948;
+}
+
 .footercontainer {
   background-color: #1D2121;
 }
@@ -434,6 +484,12 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .serv-pestanas, .serv-cejas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 500px) {
@@ -441,6 +497,9 @@ header {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     overflow: hidden;
+  }
+  .presentacion img {
+    visibility: hidden;
   }
 }
 

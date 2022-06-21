@@ -40,6 +40,10 @@
         display: flex;
         flex-direction: column;
     }
+    .serv-pestanas, .serv-cejas {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
 }
 
@@ -48,6 +52,15 @@
         grid-template-columns:  1fr;
         overflow: hidden;
     }
+    
+
+    .presentacion {
+        img{
+            visibility: hidden;
+        }
+
+    }
+
     
 }
 

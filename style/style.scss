@@ -147,8 +147,6 @@ header {
     }
     .pest-ext , .pest-ll {
         padding: 5%;
-        display: flex;
-        flex-direction: column;
 
     }
     .cej-dp, .cej-dp-hn, .cej-bl{
@@ -214,9 +212,6 @@ header {
     
     animation-name: fadeIn;
     animation-duration: 3s;
-    img{
-        position: relative;
-    }
     section{
         background-color: map-get($colores, tea);
         display: flex;
@@ -270,6 +265,55 @@ header {
     }
 
 }
+
+.preciostb {
+    grid-area: preciostb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    div {
+        width: 350px;
+        height: 600px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-right: #ffe8e2;
+        border-right-style: solid; 
+        padding-right: 15px ;
+    }
+
+}
+
+.preciotb__col {
+    list-style: none;
+    li{
+        padding-bottom: 5px;
+        padding-left: 10px;
+        text-align: start;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: #574C4E;
+        border-bottom-style: solid;
+    }
+}
+
+.preciotb__title {
+    font-size: 25px;
+    color: map-get($map: $colores, taupe);
+    list-style: none;
+    border-bottom-style: none;
+}
+
+.preciotb__tiposerv {
+    font-size: 20px;
+}
+
+.preciotb__precioserv {
+    font-size: 20px;
+    text-align: end;
+    color: #ba4948;
+}
+
   
   
 .footercontainer {
