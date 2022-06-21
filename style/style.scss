@@ -126,24 +126,38 @@ header {
         
     }
 }
-.navServ{
-    height: 5vw;
-    background-color: map-get($colores, tea);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    a{
-        color: map-get($colores, taupe);
+
+.serviciosd{
+    h2{
         text-align: center;
-        justify-content: center;
+        color: map-get($colores, shark);
         text-transform: uppercase;
-        padding: 10px;
-        font-weight: 400;
-        &:hover {
-            color: map-get($colores, shark);
-        }
+
     }
+    .serv-pestanas, .serv-cejas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        
+        h3 {
+            color: map-get($colores, taupe );
+            text-transform: uppercase;
+        }
+
+    }
+    .pest-ext , .pest-ll {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .cej-dp, .cej-dp-hn, .cej-bl{
+        padding: 5%;
+    }
+
+
     
+
 }
 
 .row {
@@ -183,17 +197,63 @@ header {
 }
 
 .presentacion {
+    
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    img{
+        position: relative;
+    }
     section{
         background-color: map-get($colores, tea);
         display: flex;
         flex-direction: row;
         margin: 5vh 10vw 5vh 10vw;
     }
+    .presentacion-div{
+        padding: 10%;
+        font-family: 'Lobster', cursive;
+        animation-name: fadeIn;
+        animation-delay: 2s;
+        animation-duration: 3s;
+
+    }
 }
 .encontranos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .map, .horarios, .contact{
+
+        display: flex;
+        flex-direction: column;
+        border-left-style: solid;
+        border-color: map-get($colores, taupe);
+        iframe{ 
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        h3{
+            align-self: center;
+            text-transform: uppercase;
+        }
+        span {
+            align-self: center;
+            margin-bottom: 15px;
+        }
+        p {
+            align-self: center;
+            a {
+                text-decoration: none;
+                color: map-get($colores, taupe );
+            }
+        }
+        ul{
+            align-self: center;
+            li{
+                text-align: justify;
+            }
+        }
+    }
 
 }
   

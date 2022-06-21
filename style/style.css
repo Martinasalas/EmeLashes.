@@ -161,33 +161,37 @@ header {
   color: #1D2121;
 }
 
-.navServ {
-  height: 5vw;
-  background-color: #C5B8B2;
+.serviciosd h2 {
+  text-align: center;
+  color: #1D2121;
+  text-transform: uppercase;
+}
+
+.serviciosd .serv-pestanas, .serviciosd .serv-cejas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.serviciosd .serv-pestanas h3, .serviciosd .serv-cejas h3 {
+  color: #483934;
+  text-transform: uppercase;
+}
+
+.serviciosd .pest-ext, .serviciosd .pest-ll {
+  padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.navServ a {
-  color: #483934;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-transform: uppercase;
-  padding: 10px;
-  font-weight: 400;
-}
-
-.navServ a:hover {
-  color: #1D2121;
+.serviciosd .cej-dp, .serviciosd .cej-dp-hn, .serviciosd .cej-bl {
+  padding: 5%;
 }
 
 .row {
@@ -233,6 +237,17 @@ header {
   visibility: hidden;
 }
 
+.presentacion {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.presentacion img {
+  position: relative;
+}
+
 .presentacion section {
   background-color: #C5B8B2;
   display: -webkit-box;
@@ -245,16 +260,74 @@ header {
   margin: 5vh 10vw 5vh 10vw;
 }
 
+.presentacion .presentacion-div {
+  padding: 10%;
+  font-family: 'Lobster', cursive;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 .encontranos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.encontranos .map, .encontranos .horarios, .encontranos .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left-style: solid;
+  border-color: #483934;
+}
+
+.encontranos .map iframe, .encontranos .horarios iframe, .encontranos .contact iframe {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.encontranos .map h3, .encontranos .horarios h3, .encontranos .contact h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+}
+
+.encontranos .map span, .encontranos .horarios span, .encontranos .contact span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 15px;
+}
+
+.encontranos .map p, .encontranos .horarios p, .encontranos .contact p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.encontranos .map p a, .encontranos .horarios p a, .encontranos .contact p a {
+  text-decoration: none;
+  color: #483934;
+}
+
+.encontranos .map ul, .encontranos .horarios ul, .encontranos .contact ul {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.encontranos .map ul li, .encontranos .horarios ul li, .encontranos .contact ul li {
+  text-align: justify;
 }
 
 .footercontainer {
