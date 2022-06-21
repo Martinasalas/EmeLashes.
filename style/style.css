@@ -16,6 +16,30 @@
   }
 }
 
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -191,6 +215,17 @@ header {
 }
 
 .serviciosd .cej-dp, .serviciosd .cej-dp-hn, .serviciosd .cej-bl {
+  padding: 5%;
+}
+
+.serviciosd .recom-serv {
+  background-color: #C5B8B2;
+  border-radius: 10%;
+}
+
+.serviciosd .recom-serv .recom-td {
+  font-weight: 700;
+  background-color: #C5B8B2;
   padding: 5%;
 }
 

@@ -134,7 +134,7 @@ header {
         text-transform: uppercase;
 
     }
-    .serv-pestanas, .serv-cejas {
+    .serv-pestanas, .serv-cejas{
         display: grid;
         grid-template-columns: 1fr 1fr;
 
@@ -154,6 +154,20 @@ header {
     .cej-dp, .cej-dp-hn, .cej-bl{
         padding: 5%;
     }
+    .recom-serv {
+        background-color: map-get($colores, tea);
+        border-radius: 10%;
+
+        
+        .recom-td{
+            font-weight: 700;
+            background-color: map-get($colores, tea);
+            padding: 5%;
+
+    }
+
+    }
+    
 
 
     
