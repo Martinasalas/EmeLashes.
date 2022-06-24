@@ -154,6 +154,7 @@ header {
 }
 
 .container .descripcionServici .textodesc h2 {
+  text-transform: uppercase;
   font-weight: 400;
   text-align: center;
 }
@@ -163,6 +164,8 @@ header {
 }
 
 .container .descripcionServici .buttom-Inic {
+  -ms-grid-column-align: center;
+      justify-self: center;
   border-radius: 5px;
   background-color: #1D2121;
 }
@@ -358,6 +361,8 @@ header {
 }
 
 .preciostb {
+  background: url(../img/golden-geometric-abstract-background-white-pattern-decoration-design-symmetrical-pattern-gold-color_86390-6027.webp);
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,7 +377,9 @@ header {
           animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.preciostb div {
+.preciostb .tabla-pc {
+  background-color: #B6964B;
+  opacity: 80%;
   width: 350px;
   height: 600px;
   margin-top: 50px;
@@ -414,7 +421,7 @@ header {
 .preciotb__precioserv {
   font-size: 20px;
   text-align: end;
-  color: #B6964B;
+  color: #1D2121;
 }
 
 .footercontainer {

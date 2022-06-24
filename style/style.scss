@@ -97,6 +97,7 @@ header {
             animation-name: fadeIn;
             animation-duration: 3s;
             h2{
+                text-transform: uppercase;
                 font-weight: 400;
                 text-align: center;
             }
@@ -106,6 +107,7 @@ header {
 
         }
         .buttom-Inic {
+            justify-self: center;
             border-radius: 5px;
             background-color: map-get($colores, shark);
             
@@ -272,11 +274,16 @@ header {
 }
 
 .preciostb {
+    
+    background: url(../img/golden-geometric-abstract-background-white-pattern-decoration-design-symmetrical-pattern-gold-color_86390-6027.webp);
+    background-attachment: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
 	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    div {
+    .tabla-pc {
+        background-color: map-get($colores, goldd);
+        opacity: 80%;
         width: 350px;
         height: 600px;
         margin-top: 50px;
@@ -315,7 +322,7 @@ header {
 .preciotb__precioserv {
     font-size: 20px;
     text-align: end;
-    color: map-get($colores, goldd);
+    color: map-get($colores, shark);
 }
 
   
