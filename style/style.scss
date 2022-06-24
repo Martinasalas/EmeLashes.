@@ -1,12 +1,14 @@
 
 @import 'colores';
 @import 'keyframes';
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Yanone+Kaffeesatz:wght@300&display=swap');
 
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Caveat', cursive;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 a {
@@ -20,7 +22,6 @@ header {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    font-family: sans-serif;
     background-color: map-get($colores, shark);
 }
 .brand {
@@ -79,6 +80,7 @@ header {
     .fotoDiv1, .fotoDiv3{
         background: url(../img/bg-img-6.jpg);
         background-attachment: fixed;
+        background-size:auto;
     }
     .fotoDiv2{
         background: url(../img/img-bg-5.jpg);
@@ -103,9 +105,7 @@ header {
             }
 
         }
-        .buttom-Inic{
-            justify-self: center;
-            align-items: center;
+        .buttom-Inic {
             border-radius: 5px;
             background-color: map-get($colores, shark);
             
@@ -153,8 +153,14 @@ header {
         padding: 5%;
     }
     .recom-serv {
+        
+        animation-name: slideInUp;
+        animation-duration: 3s;
         background-color: map-get($colores, tea);
         border-radius: 10%;
+        h2{
+            padding-top: 30px;
+        }
 
         
         .recom-td{
@@ -176,7 +182,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
+}
   
   
 .column {
@@ -220,7 +226,6 @@ header {
     }
     .presentacion-div{
         padding: 10%;
-        font-family: 'Lobster', cursive;
         animation-name: fadeIn;
         animation-delay: 2s;
         animation-duration: 3s;
@@ -267,7 +272,6 @@ header {
 }
 
 .preciostb {
-    grid-area: preciostb;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -277,7 +281,7 @@ header {
         height: 600px;
         margin-top: 50px;
         margin-bottom: 50px;
-        border-right: #ffe8e2;
+        border-right: map-get($colores, gullGray);
         border-right-style: solid; 
         padding-right: 15px ;
     }
@@ -299,7 +303,7 @@ header {
 
 .preciotb__title {
     font-size: 25px;
-    color: map-get($map: $colores, taupe);
+    color: map-get($colores, taupe);
     list-style: none;
     border-bottom-style: none;
 }
@@ -311,7 +315,7 @@ header {
 .preciotb__precioserv {
     font-size: 20px;
     text-align: end;
-    color: #ba4948;
+    color: map-get($colores, goldd);
 }
 
   

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Yanone+Kaffeesatz:wght@300&display=swap");
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -6,7 +7,6 @@
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -45,6 +45,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Caveat', cursive;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
@@ -61,7 +62,6 @@ header {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  font-family: sans-serif;
   background-color: #1D2121;
 }
 
@@ -129,6 +129,7 @@ header {
 .container .fotoDiv1, .container .fotoDiv3 {
   background: url(../img/bg-img-6.jpg);
   background-attachment: fixed;
+  background-size: auto;
 }
 
 .container .fotoDiv2 {
@@ -162,11 +163,6 @@ header {
 }
 
 .container .descripcionServici .buttom-Inic {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 5px;
   background-color: #1D2121;
 }
@@ -212,8 +208,16 @@ header {
 }
 
 .serviciosd .recom-serv {
+  -webkit-animation-name: slideInUp;
+          animation-name: slideInUp;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   background-color: #C5B8B2;
   border-radius: 10%;
+}
+
+.serviciosd .recom-serv h2 {
+  padding-top: 30px;
 }
 
 .serviciosd .recom-serv .recom-td {
@@ -286,7 +290,6 @@ header {
 
 .presentacion .presentacion-div {
   padding: 10%;
-  font-family: 'Lobster', cursive;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-delay: 2s;
@@ -355,7 +358,6 @@ header {
 }
 
 .preciostb {
-  grid-area: preciostb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +377,7 @@ header {
   height: 600px;
   margin-top: 50px;
   margin-bottom: 50px;
-  border-right: #ffe8e2;
+  border-right: #99B0B5;
   border-right-style: solid;
   padding-right: 15px;
 }
@@ -400,7 +402,7 @@ header {
 
 .preciotb__title {
   font-size: 25px;
-  color: map;
+  color: #483934;
   list-style: none;
   border-bottom-style: none;
 }
@@ -412,7 +414,7 @@ header {
 .preciotb__precioserv {
   font-size: 20px;
   text-align: end;
-  color: #ba4948;
+  color: #B6964B;
 }
 
 .footercontainer {
