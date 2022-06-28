@@ -216,6 +216,17 @@ header {
     }
 }
 
+.expusuario {
+    margin: 2%;
+    padding: 5%;
+    background-color: map-get($colores, taupe);
+    border-radius: 30px;
+    h3{
+        text-transform: uppercase;
+    }
+
+}
+
 .presentacion {
     
     animation-name: fadeIn;

@@ -272,6 +272,17 @@ header {
   visibility: hidden;
 }
 
+.expusuario {
+  margin: 2%;
+  padding: 5%;
+  background-color: #483934;
+  border-radius: 30px;
+}
+
+.expusuario h3 {
+  text-transform: uppercase;
+}
+
 .presentacion {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
