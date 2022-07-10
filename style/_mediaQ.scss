@@ -1,3 +1,18 @@
+
+@media screen and (max-width: 1200px ) {
+    .encontranos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
 @media (max-width: 768px) {
     .menu {
         width: 100%;
@@ -36,48 +51,46 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #carouselExampleDark {
+        visibility:hidden
+    }
+
     .encontranos {
         display: flex;
         flex-direction: column;
     }
-    .serv-pestanas, .serv-cejas {
-        display: grid;
+
+    .serviciosd {
+        .serv-pestanas, .serv-cejas {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    
+    .container {
         grid-template-columns: 1fr;
     }
 
-}
 
-@media (max-width: 500px) {
-    .container {
-        grid-template-columns:  1fr;
-        overflow: hidden;
-    }
+    .preciostb {
     
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .presentacion {
         img{
             visibility: hidden;
         }
 
     }
-
-    
 }
-
-@media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-@media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-
-
-
-
 
