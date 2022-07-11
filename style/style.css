@@ -137,6 +137,8 @@ header {
 
 .container .descripcionServici {
   background-color: #483934;
+  border-style: solid;
+  border-color: #C5B8B2;
 }
 
 .container .descripcionServici .textodesc {
@@ -161,6 +163,8 @@ header {
 }
 
 .container .descripcionServici .textodesc p {
+  min-width: 100%;
+  min-width: 100%;
   text-align: justify;
 }
 
@@ -274,6 +278,26 @@ header {
   visibility: hidden;
 }
 
+.column .bg-glly3 {
+  margin-top: 8px;
+  background-image: url(../img/bg-img7.jpg);
+  background-attachment: fixed;
+}
+
+.column .bg-glly3 img {
+  visibility: hidden;
+}
+
+.column .bg-glly4 {
+  margin-top: 8px;
+  background-image: url(../img/bg-img-3.jpg);
+  background-attachment: fixed;
+}
+
+.column .bg-glly4 img {
+  visibility: hidden;
+}
+
 .expusuario {
   margin: 2%;
   padding: 5%;
@@ -307,6 +331,10 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 5vh 10vw 5vh 10vw;
+}
+
+.presentacion section img {
+  padding: 5%;
 }
 
 .presentacion .presentacion-div {
@@ -521,7 +549,7 @@ header {
         grid-template-columns: 1fr 1fr;
   }
   #carouselExampleDark {
-    visibility: hidden;
+    display: none;
   }
   .encontranos {
     display: -webkit-box;
@@ -532,11 +560,23 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .encontranos .divFoto {
+    display: none;
+  }
   .serviciosd .serv-pestanas, .serviciosd .serv-cejas {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .presentacion section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -562,9 +602,6 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .presentacion img {
-    visibility: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */
